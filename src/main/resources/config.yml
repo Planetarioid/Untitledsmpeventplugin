@@ -1,0 +1,11 @@
+# UntitledEventManager configuration
+# Event spawn and lobby locations are saved in data.yml using /event setspawn and /event setlobby.
+event:
+  max-capacity: 500
+
+# GUI list pages display up to 45 entries. The remaining 9 slots are controls.
+gui:
+  entries-per-page: 45
+
+messages:
+  prefix: '&6[Event] &f'

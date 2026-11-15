@@ -1,0 +1,41 @@
+name: UntitledEventManager
+version: '${project.version}'
+main: com.untitledeventmanager.UntitledEventManager
+api-version: '1.21'
+author: Server Owner
+description: Event lifecycle, participant, and kit management for Paper 1.21.11
+softdepend: [LuckPerms, FancyNpcs]
+commands:
+  event:
+    description: Join and manage the active event
+    usage: /event <join|status|...>
+    aliases: [ev]
+permissions:
+  eventmanager.admin:
+    default: op
+    children:
+      eventmanager.gui: true
+      eventmanager.status: true
+      eventmanager.settings: true
+      eventmanager.playerlimit: true
+      eventmanager.kits: true
+      eventmanager.kits.create: true
+      eventmanager.kits.update: true
+      eventmanager.kits.delete: true
+      eventmanager.kits.give: true
+      eventmanager.participants: true
+      eventmanager.endcommands: true
+      eventmanager.locations: true
+  eventmanager.gui: {default: op}
+  eventmanager.join: {default: true}
+  eventmanager.status: {default: op}
+  eventmanager.settings: {default: op}
+  eventmanager.playerlimit: {default: op}
+  eventmanager.kits: {default: op}
+  eventmanager.kits.create: {default: op}
+  eventmanager.kits.update: {default: op}
+  eventmanager.kits.delete: {default: op}
+  eventmanager.kits.give: {default: op}
+  eventmanager.participants: {default: op}
+  eventmanager.endcommands: {default: op}
+  eventmanager.locations: {default: op}
